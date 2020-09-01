@@ -1,6 +1,9 @@
 dist: xenial
 language: python
 
+arch:
+  - ppc64le
+
 jobs:
   fast_finish: true
   include:
