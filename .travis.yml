@@ -26,7 +26,8 @@ jobs:
     env: TOXENV=docs
 
 cache: pip
-
+before_install:
+  - sudo chown -Rvf $USER:$GROUP ~/.cache/pip/wheels
 install:
 
 # ensure we have recent pip/setuptools/wheel
